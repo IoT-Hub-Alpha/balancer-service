@@ -1,0 +1,37 @@
+[
+{
+    "name": "mqtt-ingest",
+    "service": "mqtt-ingest:8000"
+},
+{
+    "name": "db-writer",
+    "service": "db-writer:8033"
+},
+{
+    "name": "telemetry-validator",
+    "service": "telemetry-validator:8037"
+},
+{
+    "name": "auth-service",
+    "service": "auth-service:8005"
+},
+{
+    "name": "api-telemetry",
+    "service": "api-telemetry:8014/v1/telemetry"
+},
+{
+    "name": "notification-api",
+    "service": "notification-api:8015"
+},
+{
+    "name": "gateway",
+    "service": "gateway:8000/api"
+},
+{
+    "name": "api-rule",
+    "service": "rule-api:8013"
+},
+{
+    "name": "http-ingest",
+    "service": "http-ingest:8001"
+}]
