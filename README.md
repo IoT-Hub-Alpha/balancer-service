@@ -67,20 +67,6 @@ Environment variables control behavior:
 
 ---
 
-## Running Locally
-
-pip install -r requirements.txt
-python -m main
-
----
-
-## Docker
-
-docker build -t balancer-service .
-docker run -p 8055:8055 balancer-service
-
----
-
 ## Testing
 
 pytest --cov=app --cov-report=term-missing
@@ -92,9 +78,3 @@ pytest --cov=app --cov-report=term-missing
 - Kafka retry logic may return None on retries
 - Scaling assumes container cloning works
 - Internal service usage (no auth)
-
----
-
-## License
-
-MIT
